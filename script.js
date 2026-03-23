@@ -1,5 +1,5 @@
 // Configuración de la API (Con la llave proporcionada)
-const API_KEY = "TAIzaSyDjQ215AU9JaJlVU7KAuTfPn4gs__D0z2Y"; 
+const API_KEY = "AIzaSyDjQ215AU9JaJlVU7KAuTfPn4gs__D0z2Y"; 
 const URL = `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`;
 
 let voiceEnabled = true;
