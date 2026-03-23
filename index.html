@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-MAX - Unidad de Diagnóstico Clínico</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+    
+    <div class="main-wrapper">
+        <header class="chat-header">
+            <div class="logo">
+                <img src="Medicallogo.png" alt="Logo" class="nav-logo" onerror="this.outerHTML='<i class=\'fas fa-bolt\'></i>'">
+                <h1>V-MAX <span>PRO</span></h1>
+            </div>
+            <div class="header-actions">
+                <button id="clear-chat" title="Nueva Consulta"><i class="fas fa-trash-alt"></i></button>
+                <button id="toggle-voice" title="Voz"><i class="fas fa-volume-up"></i></button>
+                <button id="toggle-theme" title="Cambiar Tema"><i class="fas fa-sun"></i></button>
+                <button id="download-pdf" title="Descargar PDF"><i class="fas fa-file-pdf"></i></button>
+            </div>
+        </header>
+
+        <main class="chat-container">
+            <div id="chat-box" class="chat-box">
+                </div>
+        </main>
+
+        <footer class="input-area">
+            <form id="chat-form" class="input-form">
+                <input type="text" id="user-input" placeholder="Pregunte a V-MAX (ej: Interpretar Hemoglobina)..." required autocomplete="off">
+                <button type="submit" id="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </form>
+            <div class="disclaimer">V-MAX es una IA informativa. No sustituye el diagnóstico médico profesional.</div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
